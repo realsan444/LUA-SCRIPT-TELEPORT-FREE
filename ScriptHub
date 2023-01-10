@@ -1,0 +1,166 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TeleportExploit = Instance.new("ScreenGui")
+local MainTeleport = Instance.new("Frame")
+local Teleport = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TeleportTextb = Instance.new("TextButton")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local bbcbcbdehsgsakjjCjlse = Instance.new("TextButton")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local OPEN = Instance.new("ImageButton")
+
+--Properties:
+
+TeleportExploit.Name = "TeleportExploit"
+TeleportExploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TeleportExploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainTeleport.Name = "MainTeleport"
+MainTeleport.Parent = TeleportExploit
+MainTeleport.BackgroundColor3 = Color3.fromRGB(19, 125, 255)
+MainTeleport.Position = UDim2.new(0.0738310069, 0, 0.501033068, 0)
+MainTeleport.Size = UDim2.new(0.17842494, 0, 0.294421494, 0)
+MainTeleport.Visible = false
+
+Teleport.Name = "Teleport"
+Teleport.Parent = MainTeleport
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BackgroundTransparency = 1.000
+Teleport.Size = UDim2.new(1, 0, 0.292397648, 0)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "TELEPORT Exploit"
+Teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.TextScaled = true
+Teleport.TextSize = 14.000
+Teleport.TextWrapped = true
+
+UITextSizeConstraint.Parent = Teleport
+UITextSizeConstraint.MaxTextSize = 28
+
+TeleportTextb.Name = "TeleportTextb"
+TeleportTextb.Parent = MainTeleport
+TeleportTextb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportTextb.Position = UDim2.new(0, 0, 0.754385948, 0)
+TeleportTextb.Size = UDim2.new(1, 0, 0.245614037, 0)
+TeleportTextb.Font = Enum.Font.SourceSans
+TeleportTextb.Text = "Teleport!"
+TeleportTextb.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeleportTextb.TextScaled = true
+TeleportTextb.TextSize = 14.000
+TeleportTextb.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TeleportTextb
+UITextSizeConstraint_2.MaxTextSize = 41
+
+TextBox.Parent = MainTeleport
+TextBox.BackgroundColor3 = Color3.fromRGB(19, 124, 255)
+TextBox.Position = UDim2.new(0, 0, 0.292397648, 0)
+TextBox.Size = UDim2.new(1, 0, 0.397660822, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Put player username here (you dont need full user) but no display names."
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextBox
+UITextSizeConstraint_3.MaxTextSize = 55
+
+bbcbcbdehsgsakjjCjlse.Name = "bbcbcbdehsgsakjjCjlse"
+bbcbcbdehsgsakjjCjlse.Parent = MainTeleport
+bbcbcbdehsgsakjjCjlse.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+bbcbcbdehsgsakjjCjlse.Position = UDim2.new(1, 0, -0.23391813, 0)
+bbcbcbdehsgsakjjCjlse.Size = UDim2.new(0.367816091, 0, 0.23391813, 0)
+bbcbcbdehsgsakjjCjlse.Font = Enum.Font.Unknown
+bbcbcbdehsgsakjjCjlse.Text = "X"
+bbcbcbdehsgsakjjCjlse.TextColor3 = Color3.fromRGB(0, 0, 0)
+bbcbcbdehsgsakjjCjlse.TextScaled = true
+bbcbcbdehsgsakjjCjlse.TextSize = 14.000
+bbcbcbdehsgsakjjCjlse.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = bbcbcbdehsgsakjjCjlse
+UITextSizeConstraint_4.MaxTextSize = 40
+
+OPEN.Name = "OPEN"
+OPEN.Parent = TeleportExploit
+OPEN.BackgroundColor3 = Color3.fromRGB(0, 34, 255)
+OPEN.BackgroundTransparency = 1.000
+OPEN.Position = UDim2.new(0.0440935194, 0, 0.886708021, 0)
+OPEN.Size = UDim2.new(0.123051681, 0, 0.113636367, 0)
+OPEN.Image = "rbxassetid://6723742952"
+
+-- Scripts:
+
+local function TKGLSR_fake_script() -- bbcbcbdehsgsakjjCjlse.LocalScript 
+	local script = Instance.new('LocalScript', bbcbcbdehsgsakjjCjlse)
+
+	local hhhhhhhhhhhhhhhhhhhhhhhhhhhhh = script.Parent.Parent.Parent.MainTeleport
+	local PEN = script.Parent.Parent.Parent.OPEN
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		hhhhhhhhhhhhhhhhhhhhhhhhhhhhh.Visible = false
+		PEN.Visible = true
+	end)
+end
+coroutine.wrap(TKGLSR_fake_script)()
+local function LCRW_fake_script() -- OPEN.LocalScript 
+	local script = Instance.new('LocalScript', OPEN)
+
+	local hhhhhhhhhhhhhhhhhhhhhhhhhhhhh = script.Parent.Parent.MainTeleport
+	local OPEN = script.Parent.Parent.OPEN
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		hhhhhhhhhhhhhhhhhhhhhhhhhhhhh.Visible = true
+		OPEN.Visible = false
+	end)
+end
+coroutine.wrap(LCRW_fake_script)()
+
+
+
+--script
+function GetPlayer(String)
+   local Found = {}
+   local strl = String:lower()
+   if strl == "all" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           table.insert(Found,v.Name)
+       end
+   elseif strl == "others" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name ~= game.Players.LocalPlayer.Name then
+               table.insert(Found,v.Name)
+           end
+       end   
+elseif strl == "me" then
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name == game.Players.LocalPlayer.Name then
+               table.insert(Found,v.Name)
+           end
+       end  
+   else
+       for i,v in pairs(game.Players:GetPlayers()) do
+           if v.Name:lower():sub(1, #String) == String:lower() then
+               table.insert(Found,v.Name)
+           end
+       end    
+   end
+   return Found    
+end
+-------------------------------------------------------
+TeleportTextb.MouseButton1Click:Connect(function()
+	for i,v in pairs(GetPlayer(TextBox.Text)) do
+		if game.Players:FindFirstChild(v) then
+			if game.Players[v].Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v].Character.HumanoidRootPart.CFrame
+			end
+		end
+	end
+end)
